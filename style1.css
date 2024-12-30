@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    background-image: url('https://img.freepik.com/free-vector/hand-drawn-question-mark-pattern_23-2149416652.jpg?t=st=1735412363~exp=1735415963~hmac=573b1fd1b1b61d0f69db701b81ff0070e825884979dbf2dd85a592b0443b52d9&w=740');
+}
+
+.header {
+    padding: 5vh;
+}
+
+.container {
+    margin: 0 auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px 0px black;
+    width: 100%;
+    background-color: chocolate;
+    padding: 10px;
+}
+
+.judul {
+    text-align: center;
+    color: white;
+}
+
+.kotak-profil{
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: cornsilk;
+    box-shadow: 3px 3px 10px 0px black;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+.profil{
+    width: 30%;
+    box-shadow: 1px 1px 5px 0px black;
+    background-color: darkorange;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+img{
+    width: 100%;
+}
+
+.detaiils{
+    display: flex;
+    gap: 20px;
+    width: 70%;
+    justify-content: end;
+}
+ul>li{
+    list-style: none;
+    background-color: darkcyan;
+    box-shadow: 0px 5px 2px 0px black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+li{
+    padding: 10px;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.kotak-bottom{
+    background-color: cornsilk;
+    margin-top: 3vh;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 5px 10px 0px black;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.card-items{
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px 0px black;
+}
+p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.kotak-mulai{
+    background-color: cornsilk;
+    margin-top: 3vh;
+    border-radius: 10px;
+    padding: 20px;
+}
+h2{
+    text-align: center;
+    font-family: arial;
+}
+.card-mulai{
+    display: flex;
+    margin-top: 3vh;
+    justify-content: space-around;
+}
+a{
+    background-color: darkolivegreen;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    background-color: azure;
+    color: black;
+}
+
+
+
+
+
+
+/* media query */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .header{
+        padding: 2vh;
+    }
+    .container{
+        width: 100%;
+    }
+    .kotak-profil{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: cornsilk;
+    }
+    .detaiils{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    ul li{
+        width: 100%;
+    }
+
+    .kotak-bottom{
+        box-sizing: border-box;
+        padding: 0px;
+    }
+    .card{
+        display: flex;
+        background-color: cornsilk;
+        width: 100%;
+        padding: 10px;
+    }
+    .card-items{
+        padding: 20px;
+        background-color: darkcyan;
+        border-radius: 10px;
+        box-shadow: 0px 3px 5px 0px black;
+    }
+    p{
+        font-size: 1.5rem;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .header{
+        padding: 5vh;
+    }
+    .container{
+        width: 70%;
+    }
+    .kotak-profil{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: cornsilk;
+    }
+    .detaiils{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    ul li{
+        width: 100%;
+    }
+
+    .kotak-bottom{
+        box-sizing: border-box;
+        padding: 0px;
+    }
+    .card{
+        display: flex;
+        background-color: cornsilk;
+        width: 100%;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    .card-items{
+        padding: 30px;
+        background-color: darkcyan;
+        border-radius: 10px;
+        box-shadow: 0px 3px 5px 0px black;
+    }
+    p{
+        font-size: 1.5rem;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .header{
+        padding: 5vh;
+    }
+    .container{
+        width: 50%;
+    }
+    .kotak-profil{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: cornsilk;
+    }
+    .detaiils{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    ul li{
+        width: 100%;
+    }
+
+    .kotak-bottom{
+        box-sizing: border-box;
+        padding: 0px;
+    }
+    .card{
+        display: flex;
+        background-color: cornsilk;
+        width: 100%;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    .card-items{
+        padding: 30px;
+        background-color: darkcyan;
+        border-radius: 10px;
+        box-shadow: 0px 3px 5px 0px black;
+    }
+    p{
+        font-size: 1.5rem;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .header{
+        padding: 5vh;
+    }
+    .container{
+        width: 50%;
+    }
+    .kotak-profil{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: cornsilk;
+    }
+    .detaiils{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    ul li{
+        width: 100%;
+    }
+
+    .kotak-bottom{
+        box-sizing: border-box;
+        padding: 0px;
+    }
+    .card{
+        display: flex;
+        background-color: cornsilk;
+        width: 100%;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    .card-items{
+        padding: 30px;
+        background-color: darkcyan;
+        border-radius: 10px;
+        box-shadow: 0px 3px 5px 0px black;
+    }
+    p{
+        font-size: 1.5rem;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .header{
+        padding: 5vh;
+    }
+    .container{
+        width: 50%;
+    }
+    .kotak-profil{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: cornsilk;
+    }
+    .detaiils{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    ul li{
+        width: 100%;
+    }
+
+    .kotak-bottom{
+        box-sizing: border-box;
+        padding: 0px;
+    }
+    .card{
+        display: flex;
+        background-color: cornsilk;
+        width: 100%;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    .card-items{
+        padding: 30px;
+        background-color: darkcyan;
+        border-radius: 10px;
+        box-shadow: 0px 3px 5px 0px black;
+    }
+    p{
+        font-size: 1.5rem;
+        color: white;
+        font-weight: 600;
+    }
+}

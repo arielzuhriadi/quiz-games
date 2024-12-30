@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1 class="judul">QUIZ GAMES</h1>
+
+            <div class="kotak-top">
+                <div class="nyawa">
+                    <div>nyawa kamu: <h2 style="text-align: center;" id="nyawa"></h2></div>
+                </div>
+
+                <div class="nomor-soal">
+                    <h1 id="noSoal">2</h1>
+                </div>
+
+                <div class="card-div" id="burger">
+                    <div class="card-items"></div>
+                    <div class="card-items"></div>
+                    <div class="card-items"></div>
+                </div>
+            </div>
+
+
+            <div class="kotak-level-top" id="kotakLevel">
+                <div class="kotak-level">
+                    <a id="level1" class="level" href="soal1.html">1</a>
+                    <a id="level2" class="level" href="soal2.html">2</a>
+                    <a id="level3" class="level" href="soal3.html">3</a>
+                    <a id="level4" class="level" href="soal4.html">4</a>
+                    <a id="level5" class="level" href="soal5.html">5</a>
+                </div>
+            </div>
+
+
+            <div class="kotak-soal">
+                <h4 id="soal"></h4>
+            </div>
+
+            <div class="kotak-input">
+                <h5>isi jawaban yang benar</h5>
+                <form action="" autocomplete="off">
+                    <input id="input" type="text" name="inputquiz" placeholder="jawab yang benar...">
+                </form>
+            </div>
+
+            <div class="kotak-pilihan">
+                <button id="jawab">Jawab</button>
+                <a id="pindah" href="soal3.html">Lanjut</a>
+            </div>
+
+            <div class="kotak-klue">
+                <h3>Kunci:</h3>
+                <p id="clue"></p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- <audio controls autoplay>
+        <source src="Ngoni.mp3" type="audio/mpeg">
+      </audio>   -->
+
+
+    <script src="js/main2.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    background-image: url('https://img.freepik.com/free-vector/hand-drawn-question-mark-pattern_23-2149416652.jpg?t=st=1735412363~exp=1735415963~hmac=573b1fd1b1b61d0f69db701b81ff0070e825884979dbf2dd85a592b0443b52d9&w=740');
+}
+
+.header {
+    padding: 10px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: darkgoldenrod;
+    padding: 10px;
+    height: 90vh;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px 0px black;
+}
+
+.judul {
+    text-align: center;
+    color: white;
+}
+.kotak-soal h4{
+    padding: 10px;
+    text-align: center;
+}
+.kotak-soal {
+    margin-top: 2vh;
+    width: 100%;
+    background-color: aliceblue;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.kotak-input,h5 {
+    margin-top: 2vh;
+    color: white;
+}
+
+.kotak-input {
+    margin-bottom: 5vh;
+}
+
+input {
+    padding: 15px;
+    width: 100%;
+    border: 2px solid black;
+    margin-top: 1vh;
+    background-color: aliceblue;
+}
+
+.kotak-pilihan {
+    margin: 0 auto;
+    top: 20px;
+    width: 80%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+#pindah{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    font-weight: 800;
+    background-color: red;
+    border: none;
+    border-radius: 10px;   
+}
+
+#jawab {
+    margin: 0 auto;
+    width: 50%;
+    padding: 15px;
+    color: white;
+    font-weight: 800;
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 1px 2px 2px 0px black;
+}
+a:hover {
+    box-shadow: 1px 2px 2px 0px black;
+}
+
+.kotak-klue {
+    width: 100%;
+    margin-top: 4vh;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: greenyellow;
+    padding: 10px;
+    height: auto;
+}
+
+
+
+
+/* nyawa */
+.kotak-top{
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#noSoal{
+    color: white;
+}
+.nyawa{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    width: auto;
+}
+
+.card-div{
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px;
+}
+.card-items{
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 6px;
+}
+
+/* level */
+.kotak-level-top{
+    display: none;
+}
+.kotak-level{
+    position: absolute;
+    background-color: white;
+    width: 91%;
+    padding: 10px;
+    border: 2px solid black;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 15px;
+}
+.level{
+    width: 30%;
+    border-radius: 10px;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+    background-color: darkgreen;
+}
+.level,a{
+    text-decoration: none;
+}
+
+
+
+/* media query */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container {
+        width: 60%;
+    }
+
+    .kotak-klue {
+        font-size: 0.9rem;
+    }
+    .kotak-level{
+        width: 50%;
+    }
+    .level{
+        width: 30%;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 50%;
+    }
+    .kotak-level{
+        width: 47.5%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 50%;
+    }
+    .kotak-level{
+        width: 47.5%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
